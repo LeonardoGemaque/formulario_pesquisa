@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário de Pesquisa</h1>
+    <!-- criação do Formulário -->
+    <form>
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Nome
+            </label>
+            <input type="text" id="name" class="formFocus" placeholder="Digite seu nome completo ">
+        </div>
+        <!--Digite seu email-->
+        <div class="form-control">
+            <label for="email" id="label-email">
+                E-mail
+            </label>
+            <input type="email" id="email" class="formFocus" placeholder="Digite seu E-mail">
+        </div>
+
+        <div class="form-control">
+            <label for="idade" id="label-idade">
+                Idade
+            </label>
+            <input type="text" id="idade" class="formFocus" placeholder="Digite sua Idade">
+        </div>
+
+        <div class="form-control">
+            <label for="phone" id="label-phone">
+                Telefone
+            </label>
+            <input type="tel" id="" class="formFocus" placeholder="(DDD) xxxx-xxxx">
+        </div>
+
+        <div class="form-control">
+            <label for="papel" id="label-papel">
+                Qual opção melhor descreve você?
+            </label>
+            
+            <select name="papel" id="papel" class="formFocus">
+                <option value="student">Estudante</option>
+                <option value="intern">Estagiário(a)</option>
+                <option value="professional">Profissional</option>
+                <option value="other">Outro</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>Você recomendaria a empresa XPTO para um amigo?</label>
+
+            <label for="recommed-1">
+                <input type="radio"
+                 id="recommed-1"
+                 name="recommed">
+                 Sim
+            </label>
+
+            <label for="recommed-2">
+                <input type="radio"
+                 id="recommed-2"
+                 name="recommed">
+                 Não
+            </label>
+
+            <label for="recommed-3">
+                <input type="radio"
+                 id="recommed-3"
+                 name="recommed">
+                 Talvez
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label>Linguagens e estruturas conhecidas 
+                <small>(marque todas que você conhece)</small>
+            </label>
+            <!-- Caixa de seleção do tipo de entrada -->
+            <label for="op-1">
+                <input type="checkbox" name="op">
+                C
+            </label>
+            <label for="op-2">
+                <input type="checkbox" name="op">
+                C++
+            </label>
+            <label for="op-3">
+                <input type="checkbox" name="op">
+                C#
+            </label>
+            <label for="op-4">
+                <input type="checkbox" name="op">
+                Java
+            </label>
+            <label for="op-5">
+                <input type="checkbox" name="op">
+                JavaScript
+            </label>
+            <label for="op-6">
+                <input type="checkbox" name="op">
+                PHP
+            </label>
+            <label for="op-7">
+                <input type="checkbox" name="op">
+                Python
+            </label>
+            <label for="op-8">
+                <input type="checkbox" name="op">
+                SQL
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Quaisquer comentários ou sugestões
+            </label>
+            <!--controle de entrada de texto multilinha-->
+            <textarea name="comment" id="comment"
+             placeholder="Digite seu comentário aqui" class="formFocus">
+            </textarea>
+        </div>
+            <!--Controle de entrada de texto multilinha-->
+        <button type="submit" value="submit">
+            Enviar
+        </button>
+    </form>
+
+</body>
+</html>
